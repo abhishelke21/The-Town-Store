@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  height: 100;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  padding: 2vw;
+  display: flex;
+  background-repeat: repeat;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.main h1 {
+  color: burlywood;
+}
+#product-list {
+  
+  margin: 1vw;
+  margin-top: 6vw;
+  width: 30%;
+  height: 100vh;
+  overflow: auto;
+
+  background-color: #310000dc;
+  color: rgb(255, 255, 255);
+  border-radius: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1vw;
+}
+#prod-img {
+  width: 100%;
+  height: 60%;
+}
+#prod-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#prod-details {
+  width: 100%;
+
+  height: 60%;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.5vw 0;
+  text-transform: capitalize;
+  word-spacing: 0.1vw;
+}
+#prod-details h1 {
+  font-size: 1.4vw;
+  font-weight: 600;
+  padding: 0.1vw;
+}
+#prod-details h2 {
+  font-size: 1.1vw;
+  font-weight: 500;
+  padding: 0.1vw;
+}
+#prod-details h3 {
+  font-size: 1vw;
+  padding: 0.1vw;
+}
+#prod-details button {
+  font-size: 1.5vw;
+  margin: 1vw;
+  padding: 0.5vw;
+  font-weight: 600;
+  border-radius: 0.5vw;
+  background-color: burlywood;
+}
+#prod-details button:hover {
+  background-color: aquamarine;
+  scale: 1.05;
+}

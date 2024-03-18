@@ -1,0 +1,29 @@
+<div class="main">
+    <div id="order">
+        <h2>My Orders</h2>
+        <div id="order-details">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order</th>
+                        <th>Order ID </th>
+                        <th>Price</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let order of OrderData">
+                    <tr>
+                        <td> <img src="{{order.url}}" alt="Cart"> {{order.name}} </td>
+                        <td> {{order.id}} </td>
+                        <td>{{order.totalprice|number:'' }}</td>
+                        <td>In Progress</td>
+                        <td><button (click)="CancelOrder(order.id)">Cancel Order</button></td>
+                    </tr>
+                </tbody>
+
+
+            </table>
+        </div>
+    </div>
+</div>

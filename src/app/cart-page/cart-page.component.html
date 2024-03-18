@@ -1,0 +1,35 @@
+<div class="main">
+    <div id="cart">
+
+        <div id="cart-info">
+            <div id="cart-data" *ngFor="let item of cartData">
+                <div id="img">
+                    <img src="{{item.prod_url}}" alt="">
+                </div>
+                <div id="details">
+                    <h1> {{item.prod_name}} </h1>
+                    <h2>Price: &#x20B9; {{item.prod_price}} </h2>
+                    <h3>Quantity : {{item.quantity}} </h3>
+                    <button (click)="removefromCart(item.id)">Remove from cart</button>
+
+                </div>
+            </div>
+          
+
+        </div>
+
+        <div id="cart-price">
+            <h2>Cart Summary</h2>
+            <div id="price-details">
+                <h3>Product Price :{{PriceSummary.price}} </h3>
+                <h3>Delivery charge : {{PriceSummary.delivery|number:''}}  </h3>
+               
+                <h3>Discount : {{PriceSummary.discount|number:''}} </h3>
+                <h1>Total : {{PriceSummary.total |number:'' }}  </h1>
+                <button (click)="checkout()">Checkout</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>

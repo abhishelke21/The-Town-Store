@@ -1,0 +1,51 @@
+<div id="main">
+
+    <div id="nav">
+        <h1><a routerLink="/">The town Store</a></h1>
+
+        <div id="search" *ngIf="menuType!=='seller'  ">
+            <input type="text" name="serach" id="input" (keypress)="keypress()" value="Search product Here"
+                placeholder="Search product" [(ngModel)]="Search">
+
+            <button>Search</button>
+            <label for="search" *ngFor="let data of SearchData |filter:Search">
+                <div id="searchdata" *ngIf="search" routerLink="details/{{data.id}}">
+                    <img src="{{data.prod_url}}" alt="">
+                    <div id="prod_info">
+
+                        <h1> {{data.prod_name}} </h1>
+                        <h2>Price: &#x20B9; {{data.prod_price}} </h2>
+                        <h3>Color: {{data.prod_color}} </h3>
+                    </div>
+                </div>
+
+            </label>
+
+        </div>
+
+        <div id="list" [ngSwitch]="menuType">
+
+            <div id="items" *ngSwitchCase=" 'default' ">
+                <h2> <a routerLink="">Home</a> </h2>
+                <h2> <a routerLink="/seller-auth">Seller</a> </h2>
+                <h2> <a routerLink="/user-auth">Login/Sign-Up </a> </h2>
+                <h2> <a [routerLink]="cartItem>0?'cart-page':null">Cart({{cartItem}})</a> </h2>
+            </div>
+
+            <div id="items" *ngSwitchCase=" 'seller' ">
+                <h2> <a> {{SellerName |uppercase }} </a> </h2>
+                <h2> <a routerLink="/seller-add-product">Add Product</a> </h2>
+                <h2> <a (click)="Logout_seller()">Logout</a> </h2>
+                <h2> <a routerLink="/seller-home">Product:List</a> </h2>
+            </div>
+
+            <div id="items" *ngSwitchCase=" 'user' ">
+                <h2> <a routerLink="">Home</a> </h2>
+                <h2> <a> {{UserName|uppercase}} </a> </h2>
+                <h2> <a routerLink="my-order" > My Order </a> </h2>
+                <h2> <a (click)="Logout_user()">Logout</a> </h2>
+                <h2> <a [routerLink]="cartItem>0?'cart-page':null">Cart({{cartItem}})</a> </h2>
+            </div>
+        </div>
+    </div>
+</div>

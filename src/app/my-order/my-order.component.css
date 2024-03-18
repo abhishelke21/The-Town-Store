@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#order {
+  height: 100%;
+  width: 100%;
+  padding: 3vw;
+  padding-top: 8vw;
+ 
+  font-family: "Inria Sans", sans-serif;
+  color: maroon;
+}
+#order h2 {
+  font-size: 3vw;
+  font-weight: 600;
+  color: rgb(142, 0, 28);
+   text-align: center;
+}
+#order #order-details {
+ 
+  padding: 2vw;
+  width: 100%;
+}
+
+#order #order-details table th {
+  font-size: 1.5vw;
+  padding: 0.5vw 2vw;
+ 
+}
+#order #order-details table 
+td {
+  font-size: 1.5vw;
+  padding: 0.8vw 2vw;
+ 
+}
+#order #order-details table 
+td button {
+  font-size: 1.2vw;
+  padding: 0.5vw;
+  border-radius: 0.7vw;
+  background-color: burlywood;
+  font-weight: 600;
+}
+#order #order-details table td img {
+  width: 10vw;
+  border: groove;
+  border-radius: 0.5vw;
+}

@@ -1,0 +1,27 @@
+<div class="main">
+    <div id="product-details" *ngIf="ProductDetails">
+        <div id="detail">
+            <div id="img">
+                <img src="{{ProductDetails.prod_url}}" alt="">
+
+            </div>
+            <div id="pd">
+                <h1> {{ProductDetails.prod_name}} </h1>
+                <h2> Price : &#x20B9; {{ProductDetails.prod_price}} </h2>
+                <h3>Color : <p [style.backgroundColor]="ProductDetails.prod_color"></p></h3>
+                <h3>Category : {{ProductDetails.prod_category}} </h3>
+                <h6>Description : {{ProductDetails.prod_desc}} </h6>
+                <button id="button" *ngIf="!removeCart" (click)="AddtoCart()">Add to Cart</button>
+                <button id="button" *ngIf="removeCart" (click)="RemovefromCart(ProductDetails.id)">Remove from Cart</button>
+                <button id="button">Buy Now</button>
+                <div id="quantity">
+                    <button (click)="HandleQuantity('min')" >-</button>
+                    <input type="text" value="{{productQuantity}}">
+                    <button (click)="HandleQuantity('plus')" >+</button>
+
+                </div>
+
+            </div>
+
+
+        </div>

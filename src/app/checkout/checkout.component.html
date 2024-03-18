@@ -1,0 +1,25 @@
+<div class="main">
+    <div id="checkout">
+        <h1>CheckOut</h1>
+        <h2>{{ordermsg}}  </h2>
+        <div id="check">
+            <div id="part1">
+
+                <form #orderData="ngForm" (ngSubmit)="OrderNow(orderData.value)">
+                    <h2>Add Shipping Address</h2>
+                    
+                    <input type="text" placeholder="Enter user Email " name="email" ngModel >
+                    <input type="text" placeholder="Enter user Contact " name="contact"  ngModel>
+                    <textarea name="" id="" cols="10" rows="4"  ngModel name="address" placeholder="Enter Shipping Adress "></textarea>
+                    <button>Order Now</button>
+                </form>
+
+            </div>
+            <div id="part2">
+                <h2>Toatl Amount : {{totalPrice|number:'' }}</h2>
+                <h3>Payment Method : <b>Pay on Delivery</b> </h3>
+            </div>
+        </div>
+
+    </div>
+</div>

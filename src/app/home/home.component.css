@@ -1,0 +1,261 @@
+@font-face {
+  font-family: rejoy;
+  src: url(/src/font/Rejouice-Headline.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  padding: 1vw;
+}
+#page1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#part1 {
+  width: 50%;
+  /* height: 100%; */
+  background-color: aliceblue;
+}
+#content {
+  text-align: center;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#content h3 {
+  font-size: 1.5vw;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 100;
+  padding: 1vw;
+}
+#content h1 {
+  font-family: "Madimi One", sans-serif;
+  font-size: 4vw;
+
+  color: rgb(113, 17, 17);
+}
+#content h2 {
+  font-family: "Caveat", cursive;
+  font-size: 2vw;
+  color: rgb(24, 3, 3);
+  padding: 1vw;
+}
+#content button {
+  margin-top: 1vw;
+  padding: 0.5vw 2vw;
+  width: 60%;
+  background-color: rgba(160, 97, 218, 0.847);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2vw;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: none;
+}
+
+#page2 {
+  height: 100vh;
+  width: 100%;
+  padding-top: 2vw;
+
+  display: flex;
+}
+
+#page2 #part1 {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(137, 43, 226);
+  background-size: cover;
+  background-position: center;
+  margin-right: 1vw;
+  background-image: url(https://images.unsplash.com/photo-1554301840-913d3250f757?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+#page2 #part1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3vw;
+  color: rgb(0, 0, 0);
+}
+#page2 #part1 #content2 {
+  border-bottom: 2px solid black;
+  width: 12vw;
+}
+#page2 #part1 #content1 h1 {
+  font-size: 3vw;
+  color: rgb(42, 0, 0);
+}
+#page2 #part1 #content1 h2 {
+  font-size: 1.4vw;
+  color: rgb(42, 0, 0);
+}
+#page2 #part1 #content2 h1 {
+  font-size: 2vw;
+  color: rgb(42, 0, 0);
+}
+#page2 #part2 {
+  width: 50%;
+  height: 100%;
+  margin-left: 1vw;
+}
+#page2 #part2 #women {
+  background-image: url(https://images.unsplash.com/photo-1559563458-527698bf5295?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3vw;
+  color: rgb(0, 0, 0);
+}
+#page2 #part2 #women #content2 {
+  border-bottom: 2px solid black;
+  width: 9vw;
+  color: rgb(42, 0, 0);
+}
+#page2 #part2 #women #content1 h1 {
+  font-size: 2vw;
+  color: rgb(42, 0, 0);
+}
+#page2 #part2 #women #content2 h1 {
+  font-size: 1.5vw;
+  color: rgb(42, 0, 0);
+}
+#page2 #part2 #women #content1 h2 {
+  font-size: 1vw;
+  color: rgb(42, 0, 0);
+}
+#page2 #part2 #men #content1 h1 {
+  font-size: 2vw;
+  color: rgb(42, 0, 0);
+}
+#page2 #part2 #men #content2 h1 {
+  font-size: 1.5vw;
+  color: rgb(42, 0, 0);
+}
+#page2 #part2 #men #content1 h2 {
+  font-size: 1vw;
+  color: rgb(42, 0, 0);
+}
+#page2 #part2 #men #content2 {
+  border-bottom: 2px solid black;
+  width: 9vw;
+  color: rgb(42, 0, 0);
+}
+
+#page2 #part2 #men {
+  background-image: url(https://images.unsplash.com/photo-1479064555552-3ef4979f8908?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: top;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3vw;
+  color: rgb(0, 0, 0);
+
+  background-color: rgb(142, 5, 69);
+}
+#page3 {
+  height: 100%;
+  width: 100%;
+}
+#page3 #heading {
+  font-size: 2.5vw;
+  text-align: center;
+  color: rgb(103, 2, 2);
+  padding-top: 2vw;
+  font-family: "Anta", sans-serif;
+  font-weight: 600;
+}
+#page3 #popular {
+  padding: 0.5vw 1vw;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#page3 #popular #cards {
+  height: 100%;
+  width: 22%;
+  text-transform: capitalize;
+  padding: 1vw;
+
+  font-family: "Anta", sans-serif;
+  font-weight: 500;
+  /* border: 0.5px solid black; */
+  margin: 1vw;
+}
+#page3 #popular #cards:hover {
+  background-color: rgba(215, 229, 218, 0.429);
+}
+#cards img {
+  width: 100%;
+  
+}
+
+#cards #prod_details {
+  padding: 0.5vw 1vw;
+}
+
+#cards #prod_details h1 {
+  font-size: 1.1vw;
+}
+
+#cards #prod_details h2 {
+  font-size: 1.4vw;
+}
+#cards #prod_details-all {
+  font-family: "Josefin Sans", sans-serif;
+  padding: 0.5vw 1vw;
+}
+
+#cards #prod_details-all h1 {
+  font-size: 1.1vw;
+}
+#cards #prod_details-all h1 {
+  font-size: 1.5vw;
+}
+#cards #prod_details-all h2 {
+  font-size: 1.1vw;
+}
+#cards #prod_details-all h4 {
+  font-size: 1vw;
+}
+#cards #prod_details-all h6 {
+  font-size: 0.8vw;
+}
+#prod_details-all button {
+  font-size: 1.1vw;
+  margin: 0.5vw;
+  padding: 0.3vw;
+  font-weight: 600;
+  border-radius: 0.5vw;
+  border: none;
+  background-color: aquamarine;
+}
+#prod_details-all button:hover {
+  background-color: burlywood;
+  scale: 1.05;
+  cursor: pointer;
+}

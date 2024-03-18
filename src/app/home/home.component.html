@@ -1,0 +1,94 @@
+<div class="main">
+
+
+    <div id="page1">
+        <div id="part1">
+            <div id="content">
+
+                <h3>New in Town </h3>
+                <h1 id="name">The town Store </h1>
+                <h2>By Mr.Abhi Shelke</h2>
+                <button><span>Get Started</span> <i class="ri-arrow-right-line"></i> </button>
+            </div>
+        </div>
+    </div>
+    <div id="page2">
+        <div id="part1">
+            <div id="content1">
+                <h1>Accessories</h1>
+                <h2>Everyone's talking about</h2>
+            </div>
+            <div id="content2">
+                <h1>Shop Now<i class="ri-arrow-right-line"></i></h1>
+
+            </div>
+
+        </div>
+        <div id="part2">
+            <div id="women">
+                <div id="content1">
+                    <h1>Women</h1>
+                    <h2>Elevated comfort</h2>
+                </div>
+                <div id="content2">
+                    <h1>Shop Now<i class="ri-arrow-right-line"></i></h1>
+
+                </div>
+
+
+            </div>
+            <div id="men">
+                <div id="content1">
+                    <h1>Mens</h1>
+                    <h2>Your wardrobe refresh</h2>
+                </div>
+                <div id="content2">
+                    <h1>Shop Now<i class="ri-arrow-right-line"></i></h1>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <div id="page3">
+        <h1 id="heading">Latest trending products</h1>
+        <div id="popular">
+
+            <div id="cards" *ngFor="let product of popularProducts" >
+                <img src="{{product.prod_url}}" alt="" routerLink="details/{{product.id}}">
+                <div id="prod_details" routerLink="details/{{product.id}}">
+                    <h1>{{product.prod_name}}</h1>
+                    <h2>{{product.prod_price}} &#x20B9; </h2>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="page3">
+
+        <h1 id="heading">Our products</h1>
+        <div id="popular">
+
+            <div id="cards" *ngFor="let product of allProducts">
+                <img src="{{product.prod_url}}" alt="" routerLink="details/{{product.id}}">
+                <div id="prod_details-all" >
+                    <h1 id="all-prod">{{product.prod_name}}</h1>
+                    <h2>{{product.prod_price}} &#x20B9; </h2>
+                    <h4 id="prod_category" >Category: {{product.prod_category}}</h4>
+                    <h4 id="prod_color">Color: {{product.prod_color}}</h4>
+                    <!-- <h6 id="prod_desc">Description:{{product.prod_desc}} </h6> -->
+                    <abbr title="Add to Cart"><button><i class="ri-shopping-cart-fill">Add to cart</i></button></abbr>
+                    <abbr title="View Product Details"><button routerLink="details/{{product.id}}"><i class="ri-eye-fill">View Details</i></button></abbr>
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>

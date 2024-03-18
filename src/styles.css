@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+.madimi-one-regular {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.caveat-font1 {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+}
+
+
+.josefin-sans-font2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.anta-regular {
+  font-family: "Anta", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.teko-font2 {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.space-grotesk-f {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.inria-sans-regular {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+

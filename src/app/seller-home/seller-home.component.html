@@ -1,0 +1,23 @@
+<div class="main">
+
+    <h1> {{ProductMessage}}</h1>
+            
+    <div id="product-list" *ngFor="let product of ProductList">
+        <div id="prod-img">
+            
+            <img src="{{product.prod_url}}" alt="">
+        </div>
+        
+        <div id="prod-details" >
+            <h1 id="prod_name">Name:{{product.prod_name}} </h1>
+            <h1 id="prod_price">Price: {{product.prod_price}} &#x20B9;  </h1>
+            <h2 id="prod_category" >Category: {{product.prod_category}}</h2>
+            <h2 id="prod_color">Color: {{product.prod_color}}</h2>
+            <h3 id="prod_desc">Description:{{product.prod_desc}} </h3>
+            <button (click)="deleteProduct(product.id)"><i class="ri-delete-bin-5-fill"></i></button>
+            <button routerLink="/seller-update-product/{{product.id}}" ><i class="ri-edit-2-fill"></i></button>
+            
+        </div>
+
+    </div>
+</div>

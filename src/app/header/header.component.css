@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#nav {
+  width: 100%;
+  padding: 2vw 3vw;
+  /* background-image: url(https://images.unsplash.com/photo-1607083206968-13611e3d76db?q=80&w=1830&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+  display: flex;
+  background-size: cover;
+  background-position: center;
+/* background-color:#c0c3cbe1; */
+  /* align-items: center; */
+  justify-content: space-between;
+  position: fixed;
+}
+#nav h1 a {
+  width: 25%;
+  
+  font-weight: 100;
+  color: #000;
+  font-family: "Madimi One", sans-serif;
+  font-size: 4vw;
+  
+  
+  color: rgb(113, 17, 17);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0 0.5vw;
+
+  border-radius: 1vw;
+}
+#search {
+  width: 35%;
+  font-size: 1.5vw;
+  /* border: 1px solid black; */
+  border-radius: 1vw;
+  position: relative;
+}
+#search input {
+  padding: 0.6vw 2vw;
+  border-radius: 1vw;
+  width: 72.6%;
+  border-right: none;
+  /* background-color: rgba(235, 226, 243, 0.815); */
+  border: none;
+}
+#search #searchdata{
+  margin-top: 1vw;
+  padding: 0.5vw 0.8vw;
+ background-color:#bdb6bbdc;
+ display: flex;
+ align-items: center;
+ color: black;
+ /* display:none; */
+ /* opacity: 0; */
+
+}
+
+#search #searchdata img{
+  width: 25%;
+}
+#search #searchdata #prod_info{
+  padding: 0.5vw;
+  width: 70%;
+  
+
+}
+#search #searchdata #prod_info h1{
+  font-size: 1.4vw;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+}
+#search #searchdata #prod_info h2{
+  font-size: 1.3vw;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+
+}
+#search #searchdata #prod_info h3{
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1vw;
+}
+
+#search button {
+  margin-left: -1vw;
+  padding: 0.6vw 2vw;
+  width: 30%;
+  font-size: 1.5vw;
+  /* background-color: rgba(235, 226, 243, 0.815); */
+  border-radius: 0.8vw;
+  border: none;
+}
+#search input:hover {
+  background-color: #dbcebf45;
+}
+#search button:hover {
+  background-color: #dbcebfb7;
+}
+
+#list {
+  width: 30%;
+  text-align: center;
+}
+#items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#list h2 {
+  font-size: 1.3vw;
+  font-weight: 100;
+  
+  padding: 0.3vw 0.8vw;
+}
+#list h2:hover {
+  /* scale: 1.1; */
+  background-color: #a3938089;
+  border-radius: 1vw;
+  /* padding: 0.3vw 0.8vw; */
+  font-weight: 600;
+
+}
+#list  h2 a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
